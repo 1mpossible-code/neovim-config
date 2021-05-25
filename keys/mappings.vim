@@ -32,7 +32,7 @@ inoremap <c-_> <ESC>:CommentToggle<CR>lj
 
 " Tree
 nnoremap <leader>e :NvimTreeToggle<CR>
-nnoremap <leader>f :NvimTreeFindFile<CR>
+nnoremap \f :NvimTreeFindFile<CR>
 
 " LSP config (the mappings used in the default file don't quite work right)
 nnoremap <silent> gd <cmd>lua vim.lsp.buf.definition()<CR>
@@ -46,3 +46,8 @@ nnoremap <silent> <C-p> <cmd>lua vim.lsp.diagnostic.goto_next()<CR>
 
 inoremap <silent><expr> <C-t> compe#confirm()
 
+" Find files using Telescope command-line sugar.
+nnoremap <leader>ff <cmd>Telescope find_files<cr>
+nnoremap <leader>fg <cmd>Telescope live_grep<cr>
+nnoremap <leader>fb <cmd>Telescope buffers<cr>
+nnoremap <leader>fh <cmd>Telescope help_tags<cr>

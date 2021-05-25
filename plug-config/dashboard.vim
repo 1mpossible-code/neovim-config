@@ -4,7 +4,7 @@ let g:dashboard_preview_file = '/home/max/.config/nvim/dashboard/logo'
 let g:dashboard_preview_file_height = 6
 let g:dashboard_preview_file_width = 80
 
-let g:dashboard_default_executive = 'fzf'
+let g:dashboard_default_executive = 'telescope'
 
 nmap <Leader>ss :<C-u>SessionSave<CR>
 nmap <Leader>sl :<C-u>SessionLoad<CR>

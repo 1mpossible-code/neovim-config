@@ -1,2 +1,7 @@
+require('plug-colorizer')
+require('compe-config')
+require('php-lsp')
+require('python-lsp')
+require('autopair')
 require('nvim_comment').setup()
 require('nvim-autopairs').enable()
